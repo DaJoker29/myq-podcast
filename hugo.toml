@@ -1,0 +1,39 @@
+baseURL = 'https://podcast.mmmyesquite.com'
+languageCode = 'en-us'
+title = 'Mmm, Yes, Quite: The Podcast'
+theme = 'ananke'
+
+[outputFormats]
+	[outputFormats.aacfeed]
+		mediaType = "application/rss+xml"
+    baseName = "index"
+    path = "/feed/aac"
+    isHTML = false
+    isPlainText = true
+    noUgly = true
+    rel = "alternate"
+	[outputFormats.mp3feed]
+		mediaType = "application/rss+xml"
+    baseName = "index"
+    path = "/feed/mp3"
+    isHTML = false
+    isPlainText = true
+    noUgly = true
+    rel = "alternate"
+
+[outputs]
+	home = ['html', 'amp', 'rss', 'aacfeed', 'mp3feed']
+
+[params]
+	author.name = "Mmm, Yes, Quite"
+	author.email = "admin@mmmyesquite.com"
+
+	mainSections = ["blog", "episodes"]
+
+	[params.podcast]
+		description = "A couple dudes losing their mind in a car."
+	  tagline = "Mmm, Yes, Quite — Your Mom"
+	  download_url = "https://podcast.mmmyesquite.com/"
+	  cdn_url = ""
+	  itunes_url = ""
+	  itunes_id = ""
